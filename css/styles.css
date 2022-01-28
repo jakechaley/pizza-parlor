@@ -1,5 +1,9 @@
 #results {
   display: none;
+  background-color: #b9e2e8;
+  margin-top: 1em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 10px #471717;
 }
 
 body {
@@ -13,4 +17,9 @@ body {
   margin-top: 11em;
   border-radius: 1em;
   box-shadow: 10px 10px 5px lightslategray;
+  text-align: center;
+}
+
+.btn {
+  box-shadow: 5px 5px 5px #471717;;
 }
