@@ -29,6 +29,13 @@ Pizza.prototype.totalCost = function(myPizza) {
   console.log(this.cost);
 };
 
+Pizza.prototype.displayPizza = function () {
+  $('#results').show();
+  $('#toppingChoice').text($('select#pizzaTopping option:selected').text());
+  $('#sizeChoice').text($('select#pizzaSize option:selected').text());
+  $('#pizzaPrice').text(this.cost)
+};
+
 $(document).ready(function() {
   $('#userInput').submit(function(event) {
     event.preventDefault();
@@ -36,6 +43,7 @@ $(document).ready(function() {
     let size = $('#pizzaSize').val();
     let myPizza = new Pizza(topping, size);
     myPizza.totalCost();
+    myPizza.displayPizza();
 
   });
 });
