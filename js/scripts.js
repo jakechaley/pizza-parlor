@@ -31,10 +31,12 @@ Pizza.prototype.totalCost = function(myPizza) {
 
 Pizza.prototype.displayPizza = function () {
   $('#results').show();
+  $('#thanks').show();
   $('#toppingChoice').text($('select#pizzaTopping option:selected').text());
   $('#sizeChoice').text($('select#pizzaSize option:selected').text());
   $('#pizzaPrice').text(this.cost)
 };
+
 
 $(document).ready(function() {
   $('#userInput').submit(function(event) {
