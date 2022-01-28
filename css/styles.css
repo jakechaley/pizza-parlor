@@ -1,3 +1,16 @@
 #results {
   display: none;
 }
+
+body {
+  background-image: url('../img/pizzabackground.jpeg');
+}
+
+.container {
+  background-color: #cf4a4a;
+  width:fit-content;
+  height: 24em;
+  margin-top: 11em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px lightslategray;
+}
