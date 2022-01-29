@@ -26,7 +26,6 @@ Pizza.prototype.totalCost = function(myPizza) {
   } else {
     this.cost += 0;
   };
-  console.log(this.cost);
 };
 
 Pizza.prototype.displayPizza = function () {
@@ -46,6 +45,8 @@ $(document).ready(function() {
     let myPizza = new Pizza(topping, size);
     myPizza.totalCost();
     myPizza.displayPizza();
+    
+    
 
   });
 });
