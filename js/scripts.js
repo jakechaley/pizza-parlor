@@ -1,45 +1,35 @@
 function Pizza(topping, size) {
   this.topping = topping;
   this.size = size;
-  this.cost = 0;
 };
 
 Pizza.prototype.totalCost = function(myPizza) {
+  let cost = 0;
   if (this.size === 'small') {
-    this.cost += 8;
+    cost += 8;
   } else if (this.size === 'medium') {
-    this.cost += 10;
+    cost += 10;
   } else if (this.size === 'large') {
-    this.cost += 13;
+    cost += 13;
   } else {
-    this.cost += 15;
+    cost += 15;
   };
 
   if (this.topping === 'pepperoni') {
-    this.cost += 2;
+    cost += 2;
   } else if (this.topping === 'italianSausage') {
-    this.cost += 3;
+    cost += 3;
   } else if (this.topping === 'greenPepper') {
-    this.cost += 4;
+    cost += 4;
   } else if (this.topping === 'pineapple') {
-    this.cost += 1;
+    cost += 1;
   } else {
-    this.cost += 0;
+    cost += 0;
   };
+  return cost;
 };
 
-Pizza.prototype.displayPizza = function () {
-  if (this.size === null || this.topping === null) {
-    alert('Please select a valid option!');
-    return;
-  };
 
-  $('#results').show();
-  $('#thanks').show();
-  $('#toppingChoice').text($('select#pizzaTopping option:selected').text());
-  $('#sizeChoice').text($('select#pizzaSize option:selected').text());
-  $('#pizzaPrice').text(this.cost)
-};
 
 
 $(document).ready(function() {
@@ -47,12 +37,16 @@ $(document).ready(function() {
     event.preventDefault();
     let topping = $('#pizzaTopping').val();
     let size = $('#pizzaSize').val();
+    if (size === null || topping === null) {
+      alert('Please select a valid option!');
+      return;
+    };
     let myPizza = new Pizza(topping, size);
-    myPizza.totalCost();
-    myPizza.displayPizza();
-    
-    
-    
-
+    let myPizzaCost = myPizza.totalCost();
+    $('#results').show();
+    $('#thanks').show();
+    $('#toppingChoice').text($('select#pizzaTopping option:selected').text());
+    $('#sizeChoice').text($('select#pizzaSize option:selected').text());
+    $('#pizzaPrice').text(myPizzaCost)
   });
 });
