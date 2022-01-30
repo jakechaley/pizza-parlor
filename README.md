@@ -19,11 +19,9 @@ _Choose a topping from the dropdown menu. Then select a pizza size from the secp
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone the Repository_
+* _Open index.html in browser_
+* _See the live site [here!](https://jakechaley.github.io/pizza-parlor/)_
 
 
 ## Known Bugs

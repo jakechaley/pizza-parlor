@@ -5,7 +5,10 @@ function Pizza(topping, size) {
 };
 
 Pizza.prototype.totalCost = function(myPizza) {
-  if (this.size === 'small') {
+  if (this.size === 'selectSize') {
+    alert('Please select a valid option!');
+    return;
+  } else if (this.size === 'small') {
     this.cost += 8;
   } else if (this.size === 'medium') {
     this.cost += 10;
@@ -15,7 +18,10 @@ Pizza.prototype.totalCost = function(myPizza) {
     this.cost += 15;
   };
 
-  if (this.topping === 'pepperoni') {
+  if (this.topping === 'selectTopping') {
+    alert('Please select a valid option!');
+    return;
+  } else if (this.topping === 'pepperoni') {
     this.cost += 2;
   } else if (this.topping === 'italianSausage') {
     this.cost += 3;
@@ -45,6 +51,7 @@ $(document).ready(function() {
     let myPizza = new Pizza(topping, size);
     myPizza.totalCost();
     myPizza.displayPizza();
+    
     
     
 
