@@ -6,12 +6,12 @@
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _Bootstrap_
-* _JavaScript_
-* _jQuery_
-* _Markdown_
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
+* Markdown
 
 ## Description
 
@@ -31,15 +31,15 @@ _Choose a topping from the dropdown menu. Then select a pizza size from the secp
 
 ## License
 
-_ISC License
+_ISC License_
 
-Copyright (c) [2022] [Jake C. Haley]
+_Copyright (c) [2022] [Jake C. Haley]_
 
-Permission to use, copy, modify, and/or distribute this software for any
+_Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
-copyright notice and this permission notice appear in all copies.
+copyright notice and this permission notice appear in all copies._
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+_THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
 REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
 AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
 INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
@@ -51,10 +51,10 @@ PERFORMANCE OF THIS SOFTWARE._
 
 // Describe Pizza()
 // Test: "It should return a pizza object with two properties for toppings and size"
-// code: const myPizza = new Pizza ('pepperoni', 'medium');
-// Expected Output: Pizza { toppings: ['pepperoni', 'sausage'], size: 'medium' }
+// code: const myPizza = new Pizza('pepperoni', 'medium');
+// Expected Output: Pizza { toppings: 'pepperoni', size: 'medium' }
 
-// Describe Pizza.prototype.totalCost ()
+// Describe Pizza.prototype.totalCost()
 // Test: It should add up the cost based on size and topping choice.
-// code: const myPizza = new Pizza ('pepperoni', 'medium',);
+// code: const myPizza = new Pizza('pepperoni', 'medium',);
 // Expected Output: Pizza { toppings: 'pepperoni', size: 'medium', cost: 12 }
