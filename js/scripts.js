@@ -29,9 +29,6 @@ Pizza.prototype.totalCost = function(myPizza) {
   return cost;
 };
 
-
-
-
 $(document).ready(function() {
   $('#userInput').submit(function(event) {
     event.preventDefault();
@@ -47,6 +44,6 @@ $(document).ready(function() {
     $('#thanks').show();
     $('#toppingChoice').text($('select#pizzaTopping option:selected').text());
     $('#sizeChoice').text($('select#pizzaSize option:selected').text());
-    $('#pizzaPrice').text(myPizzaCost)
+    $('#pizzaPrice').text(myPizzaCost);
   });
 });
