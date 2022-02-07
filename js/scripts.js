@@ -3,7 +3,7 @@ function Pizza(topping, size) {
   this.size = size;
 };
 
-Pizza.prototype.totalCost = function(myPizza) {
+Pizza.prototype.totalCost = function() { 
   let cost = 0;
   if (this.size === 'small') {
     cost += 8;
